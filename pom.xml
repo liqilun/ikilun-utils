@@ -4,7 +4,7 @@
   <groupId>com.ikilun</groupId>
   <artifactId>ikilun-utils</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <name>ikilun-utils</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -482,6 +482,7 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<encoding>utf-8</encoding>
 				</configuration>
 			</plugin>
 		</plugins>

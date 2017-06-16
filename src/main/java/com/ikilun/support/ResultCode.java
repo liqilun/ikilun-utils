@@ -5,14 +5,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.commons.lang.StringUtils;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 public class ResultCode<T> implements Serializable{
 	private static final long serialVersionUID = 4418416282894231647L;
 	private String errcode;
+	@JsonInclude(Include.NON_NULL)
 	private String msg;
 	//内部代码
+	@JsonInclude(Include.NON_NULL)
 	private String syscode;
 	//内部消息
-	private String sysmsg;	
+	@JsonInclude(Include.NON_NULL)
+	private String sysmsg;
+	@JsonInclude(Include.NON_NULL)
 	private T retval;
 	private boolean success = false;
 	private ResultCode(String code, String msg, T retval){

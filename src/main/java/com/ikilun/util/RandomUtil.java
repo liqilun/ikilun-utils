@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.apache.commons.lang.math.RandomUtils;
+import org.apache.commons.lang3.RandomUtils;
 
 public class RandomUtil {
 	public static final String upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -14,7 +14,7 @@ public class RandomUtil {
 	public static String getRandomString(String charArray, int length) {
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < length; i++) {
-			sb.append(charArray.charAt(RandomUtils.nextInt(charArray.length())));
+			sb.append(charArray.charAt(RandomUtils.nextInt(0, charArray.length())));
 		}
 		return sb.toString();
 	}
@@ -69,7 +69,7 @@ public class RandomUtil {
 		if(n <= 1){
 			return 0;
 		}
-		return org.apache.commons.lang.math.RandomUtils.nextInt(n);
+		return RandomUtils.nextInt(0,n);
 	}
 
 	/**

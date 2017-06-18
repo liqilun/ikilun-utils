@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.Map;
 
 import org.apache.commons.beanutils.PropertyUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class MapItemComparator implements Comparator<Map> {
 	private String elname, property;

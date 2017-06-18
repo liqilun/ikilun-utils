@@ -32,7 +32,7 @@ import javax.net.ssl.TrustManager;
 
 import org.apache.commons.collections.map.CaseInsensitiveMap;
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.Header;
 import org.apache.http.HeaderElement;
 import org.apache.http.HttpEntity;

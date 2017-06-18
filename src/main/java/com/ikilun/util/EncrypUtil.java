@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import org.apache.commons.codec.digest.DigestUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class EncrypUtil {
 	public static final String SIGN = "sign";

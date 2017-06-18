@@ -7,8 +7,8 @@ import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.math.RandomUtils;
+import org.apache.commons.lang3.RandomUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class PKCoderUtil {
 	private static transient String Algorithm = "DES"; // 定义 加密算法,可用 DES,DESede(TripleDES),Blowfish

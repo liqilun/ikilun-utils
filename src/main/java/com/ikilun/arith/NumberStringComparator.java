@@ -2,7 +2,7 @@ package com.ikilun.arith;
 
 import java.util.Comparator;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class NumberStringComparator implements Comparator<String> {
 	private int strlen;

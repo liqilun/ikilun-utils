@@ -98,4 +98,12 @@ public class RegexUtil {
 		int len = StringUtils.length(password);
 		return StringUtils.isAsciiPrintable(password) && len >=6 && len <=14;
 	}
+	public static boolean isSfz(String sfz){
+		String reg1 = "^[1-9]\\d{5}(18|19|([23]\\d))\\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\\d{3}[0-9Xx]$";
+		String reg2 = "^[1-9]\\d{5}\\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\\d{2}$";
+		return regMatch(sfz, reg1, true) || regMatch(sfz, reg2, true);
+	}
+	public static void main(String[] args) {
+		System.out.println(isSfz("341226198311166914"));
+	}
 }
